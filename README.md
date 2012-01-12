@@ -47,7 +47,7 @@ $sb->search({author => 'Magnus', topic => 'Perl'});
 # All special characters except for * and ? will be escaped
 
 $sb->search({author => \'Magnus', topic => \'Perl'});
-# If you pass in a string reference, * and ? will also be esacped.
+# If you pass in a string reference, * and ? will also be escaped.
 # Mnemonic: If you "escape" the string, *everything* will be escaped.
 ```
 
@@ -61,5 +61,5 @@ $sb->search(['(%query OR author:(%query)^5)', query => 'Magnus']);
 $sb->search(['(%query OR author:(%query)^5)', query => \'Magnus']);
 # If you pass in a string reference, * and ? will also be esacped.
 # Mnemonic: If you "escape" the string, *everything* will be escaped.
-```
+
 
